@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "469db69ca794dae9b747761a71f990a7"
+build_time: [1582257328, 659585000]
+inputs:
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/ViewController.swift": [1582256747, 29879782]
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/AppDelegate.swift": [1582256747, 19448578]
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/FriendRequestViewController.swift": [1582257312, 974863940]
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/CurvedTabBar.swift": [1582256856, 898077760]
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/CurvedTabBarController.swift": [1582256895, 746373811]
+  "/Users/DLE17/Desktop/CurvedTabBar/CurvedTabBar/SceneDelegate.swift": [1582256747, 27023538]
