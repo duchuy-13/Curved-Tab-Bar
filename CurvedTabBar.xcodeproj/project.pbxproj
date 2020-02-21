@@ -16,6 +16,7 @@
 		3E4DC6D923FF8A1900A06F57 /* CurvedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC6D823FF8A1900A06F57 /* CurvedTabBar.swift */; };
 		3E4DC6DB23FF8A2800A06F57 /* CurvedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC6DA23FF8A2800A06F57 /* CurvedTabBarController.swift */; };
 		3E4DC6DD23FF8A4700A06F57 /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC6DC23FF8A4700A06F57 /* FriendRequestViewController.swift */; };
+		3E78DCCA23FFCC1400E2D05B /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78DCC923FFCC1400E2D05B /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3E4DC6D823FF8A1900A06F57 /* CurvedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBar.swift; sourceTree = "<group>"; };
 		3E4DC6DA23FF8A2800A06F57 /* CurvedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBarController.swift; sourceTree = "<group>"; };
 		3E4DC6DC23FF8A4700A06F57 /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		3E78DCC923FFCC1400E2D05B /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3E4DC6D823FF8A1900A06F57 /* CurvedTabBar.swift */,
 				3E4DC6DA23FF8A2800A06F57 /* CurvedTabBarController.swift */,
 				3E4DC6DC23FF8A4700A06F57 /* FriendRequestViewController.swift */,
+				3E78DCC923FFCC1400E2D05B /* OtherViewController.swift */,
 			);
 			path = CurvedTabBar;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				3E4DC6C923FF89EB00A06F57 /* ViewController.swift in Sources */,
 				3E4DC6C523FF89EB00A06F57 /* AppDelegate.swift in Sources */,
+				3E78DCCA23FFCC1400E2D05B /* OtherViewController.swift in Sources */,
 				3E4DC6DD23FF8A4700A06F57 /* FriendRequestViewController.swift in Sources */,
 				3E4DC6D923FF8A1900A06F57 /* CurvedTabBar.swift in Sources */,
 				3E4DC6DB23FF8A2800A06F57 /* CurvedTabBarController.swift in Sources */,

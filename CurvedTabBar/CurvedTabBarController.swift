@@ -19,9 +19,10 @@ class CurvedTabBarController: UITabBarController {
     
     lazy var middleButton = UIButton.init(frame: CGRect.zero)
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.selectedIndex = 2
+//        self.selectedIndex = 0
+//    }
     
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
@@ -38,9 +39,8 @@ class CurvedTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupMiddleButton()
-        
+
         let myProfileController = FriendRequestsController()
         let nc = UINavigationController(rootViewController: myProfileController)
         //        nc.configNavColor(UIColor(red: 51/255, green: 90/255, blue: 149/255, alpha: 1))
@@ -48,7 +48,7 @@ class CurvedTabBarController: UITabBarController {
         nc.tabBarItem.image = UIImage.init(systemName: "doc.text")
         self.delegate = self
         
-        let accountController = ViewController()
+        let accountController = OtherController()
         accountController.view.backgroundColor = UIColor.blue
         let secondNC = UINavigationController(rootViewController: accountController)
         secondNC.title = "Requests"
@@ -68,7 +68,7 @@ class CurvedTabBarController: UITabBarController {
         secondNC2.tabBarItem.image = UIImage.init(systemName: "person.badge.plus")
         
         let accountController3 = EmptyController()
-        accountController3.view.backgroundColor = UIColor.purple
+        accountController3.view.backgroundColor = UIColor.white
         
         //        secondNC2.title = "Requests"
         //        secondNC2.tabBarItem.image = UIImage.init(systemName: "person.badge.plus")
@@ -111,11 +111,10 @@ class CurvedTabBarController: UITabBarController {
 extension CurvedTabBarController: UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
         if viewController.isKind(of: EmptyController.self) {
             return false
         }
-        
         return true
     }
 }
+

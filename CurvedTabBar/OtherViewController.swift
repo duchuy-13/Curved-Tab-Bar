@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendRequestsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class OtherController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     lazy var tableView: UITableView = UITableView.init(frame: CGRect.zero)
@@ -33,6 +33,8 @@ class FriendRequestsController: UIViewController, UITableViewDelegate, UITableVi
         tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         
+        
+        
         tableView.separatorColor = UIColor.rgb(red: 229, green: 231, blue: 235)
         tableView.sectionHeaderHeight = 26
         tableView.contentInsetAdjustmentBehavior = .automatic
@@ -41,7 +43,6 @@ class FriendRequestsController: UIViewController, UITableViewDelegate, UITableVi
         
         tableView.dataSource = self
         tableView.delegate = self
-        
     }
     
     override func viewSafeAreaInsetsDidChange() {
@@ -91,7 +92,7 @@ class FriendRequestsController: UIViewController, UITableViewDelegate, UITableVi
     }
 }
 
-class RequestHeader: UITableViewHeaderFooterView {
+class RequestHeader1: UITableViewHeaderFooterView {
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
@@ -134,7 +135,7 @@ class RequestHeader: UITableViewHeaderFooterView {
     }
 }
 
-class FriendRequestCell: UITableViewCell {
+class FriendRequestCell1: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -211,12 +212,5 @@ class FriendRequestCell: UITableViewCell {
         deleteButton.heightAnchor.constraint(equalToConstant: 24).isActive = true
         deleteButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         deleteButton.topAnchor.constraint(equalTo: confirmButton.topAnchor).isActive = true
-    }
-}
-
-extension UIColor {
-    
-    static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
 }
