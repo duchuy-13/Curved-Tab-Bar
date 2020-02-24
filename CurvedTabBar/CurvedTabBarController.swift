@@ -39,7 +39,6 @@ class CurvedTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupMiddleButton()
 
         let myProfileController = FriendRequestsController()
         let nc = UINavigationController(rootViewController: myProfileController)
@@ -81,19 +80,19 @@ class CurvedTabBarController: UITabBarController {
         //
         //        tabBar.layer.addSublayer(topBorder)
         //tabBar.clipsToBounds = true
+        setupMiddleButton()
+
     }
     
     func setupMiddleButton() {
         ////        self.view.layoutIfNeeded()
         
-        
-        
         middleButton.layer.cornerRadius = 30
-        middleButton.backgroundColor = UIColor.red
+        middleButton.backgroundColor = UIColor.init(hexString: "#ff7289")
         
         middleButton.addTarget(self, action: #selector(self.menuButtonAction), for: .touchUpInside)
-//        let symbolConfig = UIImage.SymbolConfiguration(font: UIFont.co)
-        middleButton.setImage(UIImage(systemName: "plus"), for: .normal)
+        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 35, weight: .medium)
+        middleButton.setImage(UIImage(systemName: "plus", withConfiguration: symbolConfig), for: .normal)
         middleButton.tintColor = .white
         
         self.view.addSubview(middleButton)
